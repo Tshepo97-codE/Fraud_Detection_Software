@@ -16,7 +16,7 @@ jobs:
           python-version: '3.9'
 
       - name: Set up Python
-        uses: actions/setuo-python@v4
+        uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
