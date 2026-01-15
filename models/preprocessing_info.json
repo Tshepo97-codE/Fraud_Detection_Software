@@ -1,0 +1,23 @@
+{
+  "dropped_columns": [
+    "uuid",
+    "lut_first_paid_date",
+    "lut_last_paid_date",
+    "ip",
+    "isp",
+    "latitude",
+    "longitude",
+    "to_bank"
+  ],
+  "datetime_columns": [
+    "date",
+    "loginTime",
+    "txn_timestamp"
+  ],
+  "categorical_encoding": "one_hot",
+  "missing_value_strategy": {
+    "categorical": "fill_with_unknown",
+    "numerical": "fill_with_median"
+  },
+  "target_column": "fraud"
+}
