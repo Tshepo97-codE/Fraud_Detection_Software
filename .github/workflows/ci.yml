@@ -11,12 +11,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          python-version: '3.9'
+        uses: actions/checkout@v3  # ✅ Remove python-version from here
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5  # ✅ Add python-version here
         with:
           python-version: '3.9'
 
