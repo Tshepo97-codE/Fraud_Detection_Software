@@ -15,7 +15,7 @@ services:
     container_name: fraud-detection-ui
     working_dir: /app
     command: >
-      sh -c "pip install streamlit pandas requests &&
+      sh -c "pip install streamlit pandas requests plotly &&
              streamlit run streamlit/app_streamlit.py --server.port=8501 --server.address=0.0.0.0"
     ports:
       - "8501:8501"
