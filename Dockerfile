@@ -6,6 +6,9 @@ WORKDIR /app
 COPY api/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# EXPLICITLY INSTALL UVICORN
+RUN pip install uvicorn[standard]
+
 # Copy application code
 COPY api/ ./api/
 COPY models/ ./models/
