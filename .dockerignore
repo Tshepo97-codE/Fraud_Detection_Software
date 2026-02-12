@@ -6,6 +6,5 @@ __pycache__/
 README.md
 fraud_dataset_raw.csv
 cleaned_df.pkl
-notebooks/
 venv/
 env/
